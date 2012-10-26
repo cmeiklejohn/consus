@@ -21,5 +21,10 @@ gem 'jquery-rails'
 
 gem 'fog'
 
+gem 'less'
+gem 'devise'
+gem 'simple_form'
+gem 'twitter-bootstrap-rails'
+
 gem 'unicorn'
 gem 'foreman'
