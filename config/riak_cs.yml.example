@@ -1,0 +1,20 @@
+development:
+  host:
+  port:
+  scheme:
+  admin_key:
+  admin_secret:
+
+test:
+  host:
+  port:
+  scheme:
+  admin_key:
+  admin_secret:
+
+production:
+  host:
+  port:
+  scheme:
+  admin_key:
+  admin_secret:
