@@ -58,5 +58,7 @@ Consus::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-  root :to => "welcomes#index"
+  resources :uploaded_files, :only => [:index, :show, :new, :create]
+
+  root :to => "uploaded_files#index"
 end

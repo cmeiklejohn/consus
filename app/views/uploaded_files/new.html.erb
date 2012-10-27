@@ -1,0 +1,19 @@
+<h2>Upload file</h2>
+
+<%= simple_form_for :uploaded_file, :html => { :multipart => true }, :url => uploaded_files_path, :html => { :method => :post } do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, :required => true, :autofocus => true %>
+
+    <%= f.label :file %>
+
+    <div class="controls">
+      <%= f.file_field :file, :required => true %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Upload file" %>
+  </div>
+<% end %>

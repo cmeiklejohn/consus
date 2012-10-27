@@ -1,0 +1,7 @@
+<h2>Browse files</h2>
+
+<ul class="nav nav-list">
+  <% @files.each do |file| %>
+    <li><%= link_to file.key, uploaded_file_path(file.key) %></li>
+  <% end %>
+</ul>
